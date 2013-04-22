@@ -15,7 +15,7 @@
 #
 
 # Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/gsm.mk)
+$(call inherit-product, vendor/carbon/config/common_gsm.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := SGH-I777
@@ -24,15 +24,15 @@ PRODUCT_RELEASE_NAME := SGH-I777
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common Carbon stuff.
+$(call inherit-product, vendor/carbon/config/common_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/i777/full_i777.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := i777
-PRODUCT_NAME := cm_i777
+PRODUCT_NAME := carbon_i777
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := SGH-I777
 
